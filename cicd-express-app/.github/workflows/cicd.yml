@@ -1,11 +1,11 @@
 name: CI/CD Pipeline
 
-# on:
-#   push:
-#     branches:
-#       - dev
-#       - stage
-#       - prod
+on:
+  push:
+    branches:
+      - dev
+      - stage
+      - prod
 
 jobs:
   build:
