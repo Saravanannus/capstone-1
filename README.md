@@ -1,11 +1,11 @@
 # capstone-1
 ![image](https://github.com/user-attachments/assets/520ebfb7-5cc1-4ede-9166-b76fae446e76)
 
-To execute the project described, I will outline the architecture and a sample application, along with the CI/CD pipeline structure. This will ensure the development-to-production process is automated and efficient, meeting the demands of the team's growth.
+To execute the project described, We will outline the architecture and a sample application, along with the CI/CD pipeline structure. This will ensure the development-to-production process is automated and efficient, meeting the demands of the team's growth.
 
 ### **1. Application Overview**
 
-You can use a simple web application like a Node.js-based Express app for this purpose, as it is lightweight and easy to set up. Here's the basic structure:
+We can use a simple web application like a Node.js-based Express app for this purpose, as it is lightweight and easy to set up. Here's the basic structure:
 
 **Application Architecture**:
 - **Backend**: Node.js with Express framework
@@ -114,7 +114,7 @@ jobs:
 
 ### **5. Deployment**
 
-You can use any cloud platform for deployment. For this project, let's assume **AWS EC2** instances for the environments:
+We can use any cloud platform for deployment. For this project, let's assume **AWS EC2** instances for the environments:
 
 1. **Dev Environment**: Deployed to an EC2 instance for development testing.
 2. **Staging Environment**: Another EC2 instance for staging, used for UAT (User Acceptance Testing).
@@ -198,7 +198,7 @@ app.listen(PORT, () => {
 
 #### **`.env`** (Environment-Specific Configurations)
 
-You will need to create environment variables for different environments (Dev, Stage, Prod). You can create separate `.env` files for each environment.
+We will need to create environment variables for different environments (Dev, Stage, Prod). You can create separate `.env` files for each environment.
 
 For example, in **development** you would have:
 
@@ -269,7 +269,7 @@ If you go to the `/health` route ([http://localhost:3000/health](http://localhos
 
 ### **6. Integrating with CI/CD Pipeline**
 
-You can now integrate this app with the **GitHub Actions CI/CD pipeline** defined earlier. After making changes, create feature branches, PRs, and merge them following the branching strategy.
+We can now integrate this app with the **GitHub Actions CI/CD pipeline** defined earlier. After making changes, create feature branches, PRs, and merge them following the branching strategy.
 
 When merged to `dev`, it deploys to your Dev environment; when merged to `stage`, it deploys to Staging, and finally to Production when merged to `prod`.
 
@@ -491,7 +491,7 @@ Now that you have created the `dev` branch, let's commit some code:
 
 ### **4. Verify the Dev Branch**
 
-You can verify that your `dev` branch is created and switched correctly by:
+We can verify that your `dev` branch is created and switched correctly by:
 
 - Checking the **bottom left corner** of VS Code (it should show `dev`).
 - Running the following Git command to list all branches:
